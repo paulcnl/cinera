@@ -16,9 +16,10 @@ router.post("/api/items", itemActions.add);
 /* ************************************************************************* */
 
 // Declaration of a "Welcome" route
+
 import browse from "./modules/item/programActions";
 
-router.get("/", browse.browse);
+router.get("/api/programs", browse.browse);
 
 /* ************************************************************************* */
 
