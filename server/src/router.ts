@@ -20,6 +20,12 @@ import programActions from "./modules/item/programActions";
 router.get("/api/programs/", programActions.browse);
 router.get("/api/programs/:id", programActions.read);
 
+router.get("/api/programs", programActions.browse);
+router.get("/api/programs/:id", programActions.read);
+router.post("/api/programs", itemActions.add);
+router.put("/api/programs/:id", itemActions.edit);
+router.delete("/api/programs/:id", itemActions.remove);
+
 router.get("/api/categories/", categoryActions.browse);
 router.get("/api/categories/:id", categoryActions.read);
 

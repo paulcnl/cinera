@@ -9,6 +9,12 @@ type Item = {
 };
 
 class ItemRepository {
+  delete(itemId: number) {
+    throw new Error("Method not implemented.");
+  }
+  update(itemId: number, updatedItem: { title: any; user_id: any; }) {
+    throw new Error("Method not implemented.");
+  }
   // The C of CRUD - Create operation
 
   async create(item: Omit<Item, "id">) {
